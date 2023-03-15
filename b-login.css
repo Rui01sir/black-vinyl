@@ -6,16 +6,25 @@
     font-style: normal;
 }
 
+.invalid-feedback{
+  background-color: white;
+}
 
-.b-box1{
+.b-p-form span {
+  font-size: 12px;
+  color: red;
+  background: white;
+}
+
+.b-box{
     width: 100%;
-    height: 960px;
+    height: 1080px;
     overflow: hidden;
 }
 .wrapper{
     margin-left: 55%;
     top: 0;
-    height: 960px;
+    height:1080px;
     position: absolute;
     overflow: hidden;
     max-width: 500px;
@@ -46,7 +55,7 @@
     height: 50px;
     width: 100%;
     overflow: hidden;
-    margin: 30px 0 10px 0;
+    margin: 20px 0 0 0;
     justify-content: space-between;
     /* border: 1px solid lightgrey; */
     border-radius: 5px;
@@ -97,24 +106,30 @@
     cursor: default;
     user-select: none;
   }
-  .wrapper .form-container{
+  .wrapper .form2-container{
     width: 100%;
     overflow: hidden;
   }
-  .form-container .form-inner{
+
+  .lable1{
+    color: #ffff;
+    font-weight: 500;
+  }
+
+  .form2-container .form2-inner{
     display: flex;
     width: 200%;
   }
-  .form-container .form-inner form{
+  .form2-container .form2-inner .form2{
     width: 50%;
     transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
   }
-  .form-inner form .field{
+  .form2-inner .form2 .field{
     height: 50px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 40px;
   }
-  .form-inner form .field input{
+  .form2-inner .form2 .field input{
     height: 100%;
     width: 100%;
     outline: none;
@@ -129,35 +144,36 @@
     color: #ffffff;;
     transition: all 0.3s ease;
   }
-  .form-inner form .field input:focus{
+  .form2-inner .form2 .field input:focus{
     border-color: #ffffff;;
     box-shadow: inset 0 0 3px #ffffff;
   }
-  .form-inner form .field input::placeholder{
+  .form2-inner .form2 .field input::placeholder{
     color: #ffffff;
     transition: all 0.3s ease;
   }
-  form .field input:focus::placeholder{
+  .form2 .field input:focus::placeholder{
     color: #616161;
   }
-  .form-inner form .pass-link{
+  .form2-inner .form2 .pass-link{
     margin-top: 30px;
   }
-  .form-inner form .signup-link{
+  .form2-inner .form2 .signup-link{
     text-align: center;
     margin-top:50px;
     color: #fff;
   }
-  .form-inner form .pass-link a,
-  .form-inner form .signup-link a{
+  .form2-inner .form2 .pass-link a,
+  .form2-inner .form2 .signup-link a{
     color: #B58686;
+    font-weight:600 ;
     text-decoration: none;
   }
-  .form-inner form .pass-link a:hover,
-  .form-inner form .signup-link a:hover{
+  .form2-inner .form2 .pass-link a:hover,
+  .form2-inner .form2 .signup-link a:hover{
     text-decoration: underline;
   }
-  form .btn{
+  .form2 .btn{
     height: 50px;
     width: 100%;
     border-radius: 5px;
@@ -165,7 +181,7 @@
     position: relative;
     overflow: hidden;
   }
-  form .btn .btn-layer{
+  .form2 .btn .btn-layer{
     height: 100%;
     width: 300%;
     position: absolute;
@@ -173,12 +189,12 @@
     border-radius: 5px;
     transition: all 0.4s ease;;
   }
-  form .btn:hover .btn-layer{
+  .form2 .btn:hover .btn-layer{
     top: 0;
     background-color: rgba(255,255,255,.2);
     left: 0;
   }
-  form .btn input[type="submit"]{
+  .form2 .btn input[type="submit"]{
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -210,12 +226,12 @@
       backdrop-filter: blur(15px);
       padding: 30px;
     }
-    .form-inner form .field{
+    .form2-inner .form2 .field{
       height: 50px;
       width: 100%;
       margin-top: 30px;
     }
-    .form-inner form .field input{
+    .form2-inner .form2 .field input{
       height: 100%;
       width: 100%;
       outline: none;
