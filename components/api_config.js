@@ -1,10 +1,10 @@
-export const HOST ="http://localhost:3000";
-
-// GET: 
-export const LIST_DATA = `${HOST}/address-book/api`;
-
-// DELETE /:id
-export const ADDRESS_BOOK = `${HOST}/address-book`;
+export const HOST ="http://localhost:3002";
 
 // 登入, POST
-export const LOGIN = `${HOST}/login`;
+export const EMAILLOGIN = `${HOST}/membership/login`;
+
+// 註冊, POST
+export const ACCOUNTREGISTER = `${HOST}/membership/register`;
+
+// DELETE /:id
+export const MEMBERSHIP = `${HOST}/membership`;
