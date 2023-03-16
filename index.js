@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './b-login.css';
 import './b-index.css';
+import './cart.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
